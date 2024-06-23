@@ -1,16 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-function MapHomeScreen(){
+function SignupScreen(){
   return(
     <View>
-        <Text>
-            맵 스크린
-        </Text>
+      <Text>회원가입 스크린</Text>
     </View>
   )
 }
 
 const style = StyleSheet.create({});
 
-export default MapHomeScreen;
+export default SignupScreen;
