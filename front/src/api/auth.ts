@@ -1,4 +1,3 @@
-import axios from "axios"
 import axiosInstance from "./axios";
 import { Category, Profile } from "../types/domain";
 import { getEncryptStorage } from "../utils";
@@ -8,12 +7,13 @@ type RequestUser = {
     password: string;
 };
 
-const postSignup = async({email, password}: RequestUser): Promise<void> => {
+const postSignup = async({
+    email, password
+}: RequestUser): Promise<void> => {
     const {data} = await axiosInstance.post('/auth/signup', {
         email,
         password,
     });
-
     return data;
 };
 
